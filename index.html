@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
 
 <meta charset="UTF-8">
@@ -14,29 +13,104 @@
 
 <body>
 
-<header class="navbar">
+<!-- NAVBAR -->
 
-<h2 class="logo">CarePlus Clinic</h2>
+<nav class="navbar">
 
-<nav>
-<a href="#home">Home</a>
-<a href="#services">Services</a>
-<a href="#doctors">Doctors</a>
-<a href="#appointment">Appointment</a>  
-<a href="#contact">Contact</a>
+<h1 class="logo">CarePlus Clinic</h1>
+
+<ul class="nav-links">
+<li><a href="#home">Home</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#doctors">Doctors</a></li>
+<li><a href="#appointment">Appointment</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
 </nav>
 
-</header>
 
-<section class="hero" id="home">
+<!-- HERO -->
 
-<div class="hero-text">
+<section id="home" class="hero">
 
-<h1>Your Health Is Our Priority</h1>
+<h2>Your Health Is Our Priority</h2>
+<p>Professional healthcare services with experienced doctors.</p>
 
-<p>Professional medical care with experienced doctors</p>
+<a href="#appointment" class="btn">Book Appointment</a>
 
-<a href="#contact" class="btn">Book Appointment</a>
+</section>
+
+
+<!-- SERVICES -->
+
+<section id="services" class="services">
+
+<h2>Our Services</h2>
+
+<div class="service-grid">
+
+<div class="service-card">
+<h3>General Checkup</h3>
+<p>Complete health checkups for all patients.</p>
+</div>
+
+<div class="service-card">
+<h3>Cardiology</h3>
+<p>Heart health and cardiac consultation.</p>
+</div>
+
+<div class="service-card">
+<h3>Dental Care</h3>
+<p>Professional dental cleaning and treatment.</p>
+</div>
+
+<div class="service-card">
+<h3>Laboratory Tests</h3>
+<p>Accurate medical testing and diagnostics.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- DOCTORS -->
+
+<section id="doctors" class="doctors">
+
+<h2>Our Doctors</h2>
+
+<div class="doctor-grid">
+
+<div class="doctor-card">
+
+<img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2" alt="Dr Sarah Ahmed">
+
+<h3>Dr. Sarah Ahmed</h3>
+
+<p>General Physician</p>
+
+</div>
+
+
+<div class="doctor-card">
+
+<img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d" alt="Dr John Mathew">
+
+<h3>Dr. John Mathew</h3>
+
+<p>Cardiologist</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- APPOINTMENT -->
+
 <section id="appointment" class="appointment">
 
 <h2>Book an Appointment</h2>
@@ -49,130 +123,71 @@
 
 <input type="date" id="date" required>
 
- <select id="doctor">
+<select id="doctor">
 
-<option value="Dr. John Mathew">Dr. John Mathew</option>
-<option value="Dr. Emily Thomas">Dr. Emily Thomas</option>
 <option value="Dr. Sarah Ahmed">Dr. Sarah Ahmed</option>
+<option value="Dr. John Mathew">Dr. John Mathew</option>
+
 </select>
- 
- <select id="time">
+
+<select id="time">
+
 <option>9:00 AM</option>
 <option>10:00 AM</option>
 <option>11:00 AM</option>
-</select>
+<option>12:00 PM</option>
 
+</select>
 
 <button type="submit">Book Appointment</button>
 
 </form>
 
-<p id="confirmation"></p>
-
-</section>
-</div>
-
 </section>
 
-<section class="services" id="services">
 
-<h2>Our Services</h2>
+<!-- CONTACT -->
 
-<div class="service-grid">
-
-<div class="service-card">
-<h3>General Consultation</h3>
-<p>Professional diagnosis and treatment.</p>
-</div>
-
-<div class="service-card">
-<h3>Dental Care</h3>
-<p>Modern dental treatment services.</p>
-</div>
-
-<div class="service-card">
-<h3>Pediatrics</h3>
-<p>Special care for children.</p>
-</div>
-
-<div class="service-card">
-<h3>Laboratory Tests</h3>
-<p>Accurate and fast medical tests.</p>
-</div>
-
-</div>
-
-</section>
-
-<section class="doctors" id="doctors">
-
-<h2>Our Doctors</h2>
-
-<div class="doctor-grid">
-
-<div class="doctor-card">
-
-<img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7">
-
-<h3>Dr. Sarah Ahmed</h3>
-
-<p>General Physician</p>
-
-</div>
-
-<div class="doctor-card">
-
-<img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2">
-
-<h3>Dr. John Mathew</h3>
-
-<p>Dentist</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="contact" id="contact">
+<section id="contact" class="contact">
 
 <h2>Contact Us</h2>
 
-<p>📍 Dubai</p>
+<p>Phone: 0564663842</p>
 
-<p>📞 +971 564663842</p>
-
-<a class="whatsapp-btn" href="https://wa.me/971564663842">
-Book via WhatsApp
-</a>
-
-<br><br>
-
-<a class="instagram-btn" href="https://www.instagram.com/" target="_blank">
-Instagram
-</a>
+<p>Email: careplusclinic@gmail.com</p>
 
 </section>
+
+
+<!-- GOOGLE MAP -->
 
 <section class="map">
 
 <iframe
-src="https://www.google.com/maps?q=Dubai&output=embed"
+src="https://maps.google.com/maps?q=dubai&t=&z=13&ie=UTF8&iwloc=&output=embed"
 width="100%"
-height="350"
-style="border:0;">
+height="300"
+style="border:0;"
+allowfullscreen=""
+loading="lazy">
 </iframe>
 
 </section>
 
+
+<!-- FOOTER -->
+
 <footer>
 
-<p>© 2026 CarePlus Clinic</p>
-<p>created by © 2026 shafi digital solution</p>
+ <p>© 2026 CarePlus Clinic. All rights reserved.</p>
+ <p>© 2026 Shafi digital solution. All rights reserved.</p>
+
 </footer>
+
+
+<!-- SCRIPT -->
 
 <script src="script.js"></script>
 
 </body>
-
 </html>
